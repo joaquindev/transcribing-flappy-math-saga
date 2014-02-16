@@ -1,7 +1,7 @@
 transcribing-flappy-math-saga
 =============================
 
-All the original idea and code can be found in this awesome repo: [tikwid/flappy-math-saga][url-source]
+All the original idea and code can be found in this awesome repo: [tikwid/flappy-math-saga][url-source]. What I'm doing in this repo can be understood as a fork, however I'm typing all the code myself to learn from it. 
 
 This repo is the code that I type in while reading the source code. That's one of the benefits of open source code, because you can learn from the source
 
