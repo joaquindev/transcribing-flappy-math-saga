@@ -46,8 +46,66 @@ $(document).ready(function(){
   if(savedscore !== "") highscore = parseInt(savedscore);
 
   //start with the splash screen
-  showSplas();
+  showSplash();
 });
 
+function getCookie(cname){
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++){
+    var c = ca[i].trim();
+    if(c.indexOf(name) === 0) return c.substring(name.length, c.length);
+  }
+  return "";
+}
+
+function setCookie(cname, cvalue, exdays){
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function showSplash(){
+  currentstate = states.SplashScreen;
+
+  //set the defaults
+  velocity = 0;
+  position = 180;
+  rotation = 0;
+  score = 0;
+
+  //update the player in preparation for the next game
+  $(".player").css({ y: 0, x: 0});
+  //updatePlayer($('#player'));
+
+  soundSwoosh.stop();
+  soundSwoosh.play();
+
+  //clear out all the pipes if there are any
+  $('.pipe').remove();
+  pipes = []; 
+
+  //make everything animated again
+  $('.animated').css('animation-play-state', 'running');
+  $('.animated').css('-webkit-animation-play-state', 'running');
+
+  //fade in the splash
+  $('.splash').transition({ opacity: 1}, 2000, 'ease');
+}
+
+function startGame(){
+  currentstate = states.GameScreen;
+
+  //fade out the splash
+  $('.splash').stop();
+  $('.splash').transition({ opacity: 0 }, 500, 'ease');
+
+  //update the big score
+  setBigScore();
+
+
+  //TODO_ over here!
+}
 
 
