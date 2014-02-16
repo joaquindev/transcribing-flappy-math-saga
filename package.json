@@ -1,0 +1,30 @@
+{
+  "name": "transcribing-flappy-math-saga",
+  "version": "0.0.1",
+  "description": "This repo is the code that I type in while reading the source code. That's one of the benefits of open source code, because you can learn from the sourc",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaquindev/transcribing-flappy-math-saga.git"
+  },
+  "keywords": [
+    "html5",
+    "video-game",
+    "flappy-bird"
+  ],
+  "author": "joaquindev",
+  "license": "The same as the original code",
+  "gitHead": "364b831b329c1807342b9a56fadadc9bd613634f",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-csslint": "~0.2.0"
+  }
+}

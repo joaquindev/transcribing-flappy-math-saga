@@ -1,0 +1,31 @@
+/* Copyright 2014 Arron McLauhlin 
+    Licensed under the Apache License, Version 2.0: 
+        http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+@-webkit-keyframes animLand {
+  0% { background-position: 0px 0px;}
+  100% { background-position: -335px 0px;}
+}
+
+@-moz-keyframes animLand { 
+  0% { background-position: 0px 0px;}
+  100% { background-position: -335px 0px;}
+}
+
+@-o-keyframes animLand {
+  0% { background-position: 0px 0px;}
+  100% { background-position: -335px 0px; }
+}
+
+@keyframes animLand {
+  0% { background-position: 0px 0px;}
+  100% { background-position: -335px 0px;}
+}
+
+@-webkit-keyframes animSky {
+  0% { background-position: 0px 0px;}
+  100% { background-position: -335px 0px; }
+}
+
+@-webkit-
